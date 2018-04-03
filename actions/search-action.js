@@ -30,7 +30,7 @@ export const loadSerial = (serials)=> {
         return axios.get(root_url)
             .then(response => {
                 dispatch({
-                    type: 'LOAD_DATA_SUCCESS',
+                    type: 'LOAD_SERIAL_SUCCESS',
                     serials: response.data
                     }
                 );
